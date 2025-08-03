@@ -1,0 +1,51 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "App",
+            "request": "launch",
+            "mainClass": "App",
+            "projectName": "HMS_3bc3caac"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "Main",
+            "projectName": "HMS_ee0292db"
+        },
+        {
+            "type": "java",
+            "name": "HostelManagementUI",
+            "request": "launch",
+            "mainClass": "HostelManagementUI",
+            "projectName": "HMS_ee0292db"
+        },
+        {
+            "type": "java",
+            "name": "Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "App",
+            "request": "launch",
+            "mainClass": "App",
+            "projectName": "HMS_ee0292db",
+            "vmArgs": "--module-path \"H:\\Desktop\\openjfx-24_windows-x64_bin-sdk\\javafx-sdk-24\\lib\" --add-modules javafx.controls,javafx.fxml"
+        },
+        {
+            "type": "java",
+            "name": "dbcon",
+            "request": "launch",
+            "mainClass": "DBHelper",
+            "projectName": "HMS_ee0292db",
+            "vmArgs": "-cp .;h:\\Desktop\\DB_PRO\\mysql-connector-j-9.3.0\\mysql-connector-j-9.3.0.jar"
+        }
+    ]
+}
