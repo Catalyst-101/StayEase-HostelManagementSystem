@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="AuditController">
+   <children>
+      <Rectangle arcHeight="40.0" arcWidth="40.0" height="407.0" layoutX="-29.0" layoutY="-5.0" stroke="#cc2f2f00" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeType="INSIDE" width="86.0">
+         <fill>
+            <LinearGradient endX="0.8341232227488151" endY="0.27014218009478674" startX="0.5592417061611374" startY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.75" green="0.3418981432914734" blue="0.1805555522441864" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.9966442953020134">
+                     <color>
+                        <Color red="0.800000011920929" green="0.17599999904632568" blue="0.17599999904632568" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.800000011920929" green="0.17599999904632568" blue="0.17599999904632568" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Rectangle>
+      <Rectangle arcHeight="40.0" arcWidth="40.0" height="41.0" layoutX="5.0" layoutY="14.0" stroke="WHITE" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeType="INSIDE" width="588.0">
+         <fill>
+            <LinearGradient endX="0.8341232227488151" endY="0.27014218009478674" startX="0.5592417061611374" startY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.75" green="0.3418981432914734" blue="0.1805555522441864" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.800000011920929" green="0.17599999904632568" blue="0.17599999904632568" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Rectangle>
+      <ImageView fitHeight="21.0" fitWidth="21.0" layoutX="558.0" layoutY="24.0">
+         <image>
+            <Image url="@cross-23.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="37.0" fitWidth="36.0" layoutX="14.0" layoutY="14.0">
+         <image>
+            <Image url="@1407802-200.png" />
+         </image>
+      </ImageView>
+      <Text layoutX="73.0" layoutY="115.0" strokeType="OUTSIDE" strokeWidth="0.0" text="AuditLog Table" wrappingWidth="202.35545349121094">
+         <font>
+            <Font name="Roboto" size="26.0" />
+         </font>
+      </Text>
+      <TableView fx:id="AuditTable" layoutX="67.0" layoutY="130.0" prefHeight="248.0" prefWidth="510.0">
+         <columns>
+            <TableColumn fx:id="colAuditId" prefWidth="79.0" text="ID" />
+            <TableColumn fx:id="colTableName" prefWidth="143.0" text="TableName" />
+            <TableColumn fx:id="colActionType" prefWidth="148.0" text="ActionType" />
+            <TableColumn fx:id="colActionDate" prefWidth="139.0" text="ActionDate" />
+         </columns>
+      </TableView>
+      <Line endX="404.0" layoutX="169.0" layoutY="125.0" startX="-100.0" />
+   </children>
+</AnchorPane>

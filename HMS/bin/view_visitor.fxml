@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="397.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="viewVisitor">
+    <children>
+
+        <Text fill="WHITE" layoutX="67.0" layoutY="40.0" text="View Visitor">
+            <font>
+                <Font name="Roboto" size="14.0" />
+            </font>
+        </Text>
+
+        <!-- Visitor ID Search -->
+        <TextField fx:id="visitorIdField" layoutX="67.0" layoutY="70.0" prefWidth="460.0" promptText="Enter Visitor ID or CNIC" />
+        <Button fx:id="searchButton" layoutX="432.0" layoutY="110.0" onAction="#searchVisitor" prefWidth="95.0" style="-fx-background-color: #cc2d2d;" text="Search" textFill="white" />
+        <Button fx:id="clearButton" layoutX="331.0" layoutY="110.0" onAction="#clearFields" prefWidth="95.0" style="-fx-background-color: #cc2d2d;" text="Clear" textFill="white" />
+
+        <!-- Visitor Info Display -->
+        <TextField fx:id="nameField" editable="false" layoutX="67.0" layoutY="160.0" prefWidth="460.0" promptText="Full Name" />
+        <TextField fx:id="cnicField" editable="false" layoutX="67.0" layoutY="200.0" prefWidth="460.0" promptText="CNIC" />
+        <TextField fx:id="phoneField" editable="false" layoutX="67.0" layoutY="240.0" prefWidth="460.0" promptText="Phone" />
+        <TextField fx:id="emailField" editable="false" layoutX="67.0" layoutY="280.0" prefWidth="460.0" promptText="Email" />
+        <ComboBox fx:id="genderComboBox" layoutX="67.0" layoutY="320.0" prefWidth="460.0" />
+      <Rectangle arcHeight="40.0" arcWidth="40.0" height="407.0" layoutX="-31.0" layoutY="-5.0" stroke="#cc2f2f00" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeType="INSIDE" width="85.0">
+         <fill>
+            <LinearGradient endX="0.8341" endY="0.2701" startX="0.5592" startY="1.0">
+               <stops>
+                  <Stop color="#BF5730" />
+                  <Stop color="#CC2D2D" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Rectangle>
+      <Rectangle arcHeight="40.0" arcWidth="40.0" height="41.0" layoutX="3.0" layoutY="14.0" stroke="WHITE" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeType="INSIDE" width="588.0">
+         <fill>
+            <LinearGradient endX="0.8341" endY="0.2701" startX="0.5592" startY="1.0">
+               <stops>
+                  <Stop color="#BF5730" />
+                  <Stop color="#CC2D2D" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Rectangle>
+      <ImageView fitHeight="21.0" fitWidth="21.0" layoutX="556.0" layoutY="24.0">
+         <image>
+            <Image url="@cross-23.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="37.0" fitWidth="36.0" layoutX="12.0" layoutY="14.0">
+         <image>
+            <Image url="@1407802-200.png" />
+         </image>
+      </ImageView>
+    </children>
+</AnchorPane>

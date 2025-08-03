@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="RemoveItemController">
+   <children>
+      <Rectangle arcHeight="40.0" arcWidth="40.0" height="407.0" layoutX="-29.0" layoutY="-5.0" stroke="#cc2f2f00" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeType="INSIDE" width="85.0">
+         <fill>
+            <LinearGradient endX="0.8341232227488151" endY="0.27014218009478674" startX="0.5592417061611374" startY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.75" green="0.3418981432914734" blue="0.1805555522441864" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.800000011920929" green="0.17599999904632568" blue="0.17599999904632568" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Rectangle>
+      <Rectangle arcHeight="40.0" arcWidth="40.0" height="41.0" layoutX="5.0" layoutY="14.0" stroke="WHITE" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeType="INSIDE" width="588.0">
+         <fill>
+            <LinearGradient endX="0.8341232227488151" endY="0.27014218009478674" startX="0.5592417061611374" startY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.75" green="0.3418981432914734" blue="0.1805555522441864" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.800000011920929" green="0.17599999904632568" blue="0.17599999904632568" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Rectangle>
+      <ImageView fitHeight="21.0" fitWidth="21.0" layoutX="558.0" layoutY="24.0">
+         <image>
+            <Image url="@cross-23.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="37.0" fitWidth="36.0" layoutX="14.0" layoutY="14.0">
+         <image>
+            <Image url="@1407802-200.png" />
+         </image>
+      </ImageView>
+      <Text layoutX="65.0" layoutY="115.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Remove Item" wrappingWidth="202.35545349121094">
+         <font>
+            <Font name="Roboto" size="26.0" />
+         </font>
+      </Text>
+      <Line endX="331.0" layoutX="238.0" layoutY="130.0" startX="-173.39999389648438" />
+      <TextField id="tf_quantity" fx:id="tf_quantity" layoutX="67.0" layoutY="171.0" prefHeight="27.0" prefWidth="505.0" promptText="Quantity" style="-fx-border-color: #000000; -fx-border-width: 1px; -fx-border-radius: 5px; -fx-background-radius: 5px;" />
+      <TextField id="tf_itemId" fx:id="tf_itemId" layoutX="67.0" layoutY="139.0" prefHeight="27.0" prefWidth="505.0" promptText="Item ID " style="-fx-border-color: #000000; -fx-border-width: 1px; -fx-border-radius: 5px; -fx-background-radius: 5px;" />
+      <Button id="addButton" fx:id="addButton" layoutX="473.0" layoutY="357.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="95.0" style="-fx-background-color: #cc2d2d;" text="Remove" textFill="WHITE" />
+      <Button id="clearButton" fx:id="clearButton" layoutX="67.0" layoutY="357.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="95.0" style="-fx-background-color: #cc2d2d;" text="Clear All" textFill="WHITE" />
+      <Text fx:id="t_info" layoutX="236.0" layoutY="264.0" strokeType="OUTSIDE" strokeWidth="0.0" />
+   </children>
+</AnchorPane>

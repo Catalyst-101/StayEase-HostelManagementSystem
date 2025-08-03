@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="RoomAllocationController">
+   <children>
+      <Rectangle arcHeight="40.0" arcWidth="40.0" height="407.0" layoutX="-29.0" layoutY="-5.0" stroke="#cc2f2f00" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeType="INSIDE" width="87.0">
+         <fill>
+            <LinearGradient endX="0.8341232227488151" endY="0.27014218009478674" startX="0.5592417061611374" startY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.75" green="0.3418981432914734" blue="0.1805555522441864" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.9966442953020134">
+                     <color>
+                        <Color red="0.800000011920929" green="0.17599999904632568" blue="0.17599999904632568" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.800000011920929" green="0.17599999904632568" blue="0.17599999904632568" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Rectangle>
+      <Rectangle arcHeight="40.0" arcWidth="40.0" height="41.0" layoutX="5.0" layoutY="14.0" stroke="WHITE" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeType="INSIDE" width="588.0">
+         <fill>
+            <LinearGradient endX="0.8341232227488151" endY="0.27014218009478674" startX="0.5592417061611374" startY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.75" green="0.3418981432914734" blue="0.1805555522441864" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.800000011920929" green="0.17599999904632568" blue="0.17599999904632568" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Rectangle>
+      <ImageView fitHeight="21.0" fitWidth="21.0" layoutX="558.0" layoutY="24.0">
+         <image>
+            <Image url="@cross-23.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="37.0" fitWidth="36.0" layoutX="14.0" layoutY="14.0">
+         <image>
+            <Image url="@1407802-200.png" />
+         </image>
+      </ImageView>
+      <Text layoutX="71.0" layoutY="115.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Room Allocation" wrappingWidth="202.35545349121094">
+         <font>
+            <Font name="Roboto" size="26.0" />
+         </font>
+      </Text>
+      <TextField fx:id="tfstudentid" layoutX="70.0" layoutY="152.0" prefHeight="27.0" prefWidth="499.0" promptText="Student ID or CNIC" style="-fx-border-color: #000000; -fx-border-width: 1px; -fx-border-radius: 5px; -fx-background-radius: 5px;" />
+      <TextField fx:id="tfhostelid" layoutX="70.0" layoutY="185.0" prefHeight="27.0" prefWidth="499.0" promptText="Hostel ID" style="-fx-border-color: #000000; -fx-border-width: 1px; -fx-border-radius: 5px; -fx-background-radius: 5px;" />
+      <MenuButton fx:id="tfRoomNo" layoutX="318.0" layoutY="219.0" mnemonicParsing="false" onAction="#btnRoomNo" prefHeight="27.0" prefWidth="249.0" style="-fx-background-color: white; -fx-border-color: black; -fx-border-radius: 5px;" text="Room No:" textFill="#c6c3c3">
+         <font>
+            <Font name="Roboto Medium" size="12.0" />
+         </font>
+      </MenuButton>
+      <DatePicker fx:id="tfallocationdate" layoutX="69.0" layoutY="251.0" onAction="#btnAllocationDate" prefHeight="27.0" prefWidth="241.0" promptText="Allocation Date" style="-fx-background-color: #ffffff; -fx-border-color: black; -fx-border-radius: 5px;" />
+      <DatePicker fx:id="tfleavingdate" layoutX="320.0" layoutY="251.0" onAction="#btnLeavingDate" prefHeight="27.0" prefWidth="249.0" promptText="Expected Leaving Date" style="-fx-background-color: #ffffff; -fx-border-color: black; -fx-border-radius: 5px;" />
+      <MenuButton fx:id="tfroomtype" layoutX="70.0" layoutY="219.0" mnemonicParsing="false" onAction="#btnRoomType" prefHeight="27.0" prefWidth="241.0" style="-fx-background-color: white; -fx-border-color: black; -fx-border-radius: 5px;" text="Room Type:" textFill="#c6c3c3">
+         <items>
+            <MenuItem onAction="#handleRoomType" text="Three Seater" />
+            <MenuItem onAction="#handleRoomType" text="Two Seater" />
+         </items>
+         <font>
+            <Font name="Roboto Medium" size="12.0" />
+         </font>
+      </MenuButton>
+      <TextField fx:id="tfroomrent" layoutX="70.0" layoutY="284.0" prefHeight="27.0" prefWidth="499.0" promptText="Room Rent (Per Month)" style="-fx-border-color: #000000; -fx-border-width: 1px; -fx-border-radius: 5px; -fx-background-radius: 5px;" />
+      <Button layoutX="72.0" layoutY="338.0" mnemonicParsing="false" onAction="#btnclear" prefHeight="25.0" prefWidth="95.0" style="-fx-background-color: #cc2d2d;" text="Clear All" textFill="WHITE" />
+      <Button layoutX="475.0" layoutY="338.0" mnemonicParsing="false" onAction="#btnallocate" prefHeight="25.0" prefWidth="95.0" style="-fx-background-color: #cc2d2d;" text="Allocate" textFill="WHITE" />
+      <Line endX="331.0" layoutX="238.0" layoutY="130.0" startX="-167.0" />
+   </children>
+</AnchorPane>
