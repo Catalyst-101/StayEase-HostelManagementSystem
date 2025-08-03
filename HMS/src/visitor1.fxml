@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="AddVisitorController">
+   <children>
+      <Rectangle arcHeight="40.0" arcWidth="40.0" height="407.0" layoutX="-29.0" layoutY="-5.0" stroke="#cc2f2f00" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeType="INSIDE" width="85.0">
+         <fill>
+            <LinearGradient endX="0.8341232227488151" endY="0.27014218009478674" startX="0.5592417061611374" startY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.75" green="0.3418981432914734" blue="0.1805555522441864" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.800000011920929" green="0.17599999904632568" blue="0.17599999904632568" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Rectangle>
+      <Rectangle arcHeight="40.0" arcWidth="40.0" height="41.0" layoutX="5.0" layoutY="14.0" stroke="WHITE" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeType="INSIDE" width="588.0">
+         <fill>
+            <LinearGradient endX="0.8341232227488151" endY="0.27014218009478674" startX="0.5592417061611374" startY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.75" green="0.3418981432914734" blue="0.1805555522441864" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.800000011920929" green="0.17599999904632568" blue="0.17599999904632568" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Rectangle>
+      <ImageView fitHeight="21.0" fitWidth="21.0" layoutX="558.0" layoutY="24.0">
+         <image>
+            <Image url="@cross-23.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="37.0" fitWidth="36.0" layoutX="14.0" layoutY="14.0">
+         <image>
+            <Image url="@1407802-200.png" />
+         </image>
+      </ImageView>
+      <Text fill="#907474" layoutX="76.0" layoutY="112.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Add Visitor" wrappingWidth="203.5849609375">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </Text>
+      <TextField fx:id="VisitorName" layoutX="66.0" layoutY="139.0" onAction="#btnName" prefHeight="19.0" prefWidth="508.0" promptText="Name">
+         <font>
+            <Font size="9.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="CNIC" layoutX="67.0" layoutY="164.0" onAction="#btnCNIC" prefHeight="19.0" prefWidth="508.0" promptText="CNIC">
+         <font>
+            <Font size="9.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="CellNO" layoutX="67.0" layoutY="188.0" onAction="#btnCell" prefHeight="19.0" prefWidth="395.0" promptText="Cell No:">
+         <font>
+            <Font size="9.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="Email" layoutX="67.0" layoutY="215.0" onAction="#btnEmailStudent" prefHeight="19.0" prefWidth="256.0" promptText="Email">
+         <font>
+            <Font size="9.0" />
+         </font>
+      </TextField>
+      <MenuButton fx:id="GENDER" layoutX="469.0" layoutY="187.0" mnemonicParsing="false" onAction="#btnGender" prefHeight="19.0" prefWidth="105.0" style="-fx-background-color: white; -fx-border-color: #D3D3D3; -fx-border-radius: 5px;" text="Gender">
+         <items>
+            <MenuItem onAction="#handleGenderSelect" text="Male" />
+            <MenuItem onAction="#handleGenderSelect" text="Female" />
+            <MenuItem onAction="#handleGenderSelect" text="Other" />
+         </items>
+         <font>
+            <Font size="9.0" />
+         </font>
+      </MenuButton>
+      <TextField fx:id="Address" layoutX="67.0" layoutY="242.0" onAction="#btnAddress" prefHeight="19.0" prefWidth="508.0" promptText="Address">
+         <font>
+            <Font size="9.0" />
+         </font>
+      </TextField>
+      <Line endX="88.0" endY="25.0" layoutX="485.0" layoutY="98.0" startX="-419.0" startY="25.0" />
+      <Button layoutX="67.0" layoutY="348.0" mnemonicParsing="false" onAction="#btnClearAll" prefHeight="25.0" prefWidth="95.0" style="-fx-background-color: #cc2d2d;" text="Clear All" textFill="WHITE" />
+      <Button layoutX="479.0" layoutY="349.0" mnemonicParsing="false" onAction="#btnAdd" prefHeight="25.0" prefWidth="95.0" style="-fx-background-color: #cc2d2d;" text="Add" textFill="WHITE" />
+      <TextField fx:id="StudentID" layoutX="327.0" layoutY="215.0" onAction="#btnAddress" prefHeight="19.0" prefWidth="246.0" promptText="Student ID">
+         <font>
+            <Font size="9.0" />
+         </font>
+      </TextField>
+   </children>
+</AnchorPane>

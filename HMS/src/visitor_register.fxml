@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.Insets?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0"
+            xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="VisitorRegisterController">
+
+    <children>
+        <!-- Side Gradient Bar -->
+        <Rectangle arcHeight="40.0" arcWidth="40.0" height="407.0" layoutX="-29.0" layoutY="-5.0"
+                   stroke="#cc2f2f00" width="85.0">
+            <fill>
+                <LinearGradient endX="0.8341" endY="0.2701" startX="0.5592" startY="1.0">
+                    <stops>
+                        <Stop color="#BF5730"/>
+                        <Stop offset="1.0" color="#CC2D2D"/>
+                    </stops>
+                </LinearGradient>
+            </fill>
+        </Rectangle>
+
+        <!-- Top Header -->
+        <Rectangle arcHeight="40.0" arcWidth="40.0" height="41.0" layoutX="5.0" layoutY="14.0"
+                   stroke="WHITE" width="588.0">
+            <fill>
+                <LinearGradient endX="0.8341" endY="0.2701" startX="0.5592" startY="1.0">
+                    <stops>
+                        <Stop color="#BF5730"/>
+                        <Stop offset="1.0" color="#CC2D2D"/>
+                    </stops>
+                </LinearGradient>
+            </fill>
+        </Rectangle>
+
+        <!-- Icons -->
+        <ImageView fitHeight="21.0" fitWidth="21.0" layoutX="558.0" layoutY="24.0">
+            <image>
+                <Image url="@cross-23.png"/>
+            </image>
+        </ImageView>
+        <ImageView fitHeight="37.0" fitWidth="36.0" layoutX="14.0" layoutY="14.0">
+            <image>
+                <Image url="@1407802-200.png"/>
+            </image>
+        </ImageView>
+
+        <!-- Header Text -->
+        <Text fill="WHITE" layoutX="67.0" layoutY="40.0" text="Visitor Register">
+            <font>
+                <Font name="Roboto" size="14.0"/>
+            </font>
+        </Text>
+
+        <!-- Scrollable Visitor List -->
+        <ScrollPane layoutX="67.0" layoutY="70.0" prefHeight="270.0" prefWidth="498.0"
+                    style="-fx-background-radius: 10; -fx-border-radius: 10; -fx-border-color: #ccc;">
+            <content>
+                <VBox fx:id="visitorListVBox" spacing="10.0">
+                    <padding>
+                        <Insets top="10" right="10" bottom="10" left="10"/>
+                    </padding>
+                </VBox>
+            </content>
+        </ScrollPane>
+
+        <!-- Close Button -->
+        <Button fx:id="closeButton" layoutX="470.0" layoutY="353.0" mnemonicParsing="false"
+                prefHeight="25.0" prefWidth="95.0"
+                style="-fx-background-color: #cc2d2d;" text="Close" textFill="WHITE"/>
+    </children>
+</AnchorPane>
